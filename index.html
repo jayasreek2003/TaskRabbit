@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>TASK RABBIT</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+
+<body>
+    <h1>Task Rabbit</h1>
+    
+      
+    <form name="RegForm" onsubmit="return validateForm()" action="/dashboard.html">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" 
+                placeholder="Enter your full name" />
+            <span id="name-error" class="error-message"></span>
+        </p>
+       
+        <p>
+            <label for="email">E-mail Address:</label>
+            <input type="text" id="email" name="EMail" 
+                placeholder="Enter your email" />
+            <span id="email-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="Password" />
+            <span id="password-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="password"> Confirm Password:</label>
+            <input type="password" id="confirm password" name="confirm Password" />
+            <span id="password-error" class="error-message"></span>
+        </p>
+       
+        <div><p>
+            <input type="submit" value="Login" name="Login" />
+           
+        </p>
+        <p> <input type="submit" value="Register" name="Register" /></p></div>
+        
+    </form>
+    <br>
+    <div class="left"><center><a href="file upload/upload.html" target="_blank">
+        <button
+          style="
+            background-color: rgb(6, 6, 6);
+            color: rgb(240, 243, 246);
+            border-radius: 8px;
+            height: 50px;
+            width: 200px;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+              sans-serif;
+              align-items:right;
+          "
+        >
+          upload image
+        </button>
+      </a></center></div>
+    <script src="script.js"></script>
+    <!-- <script>  new FroalaEditor('.selector', {    // Set the file upload URL.    fileUploadURL: '/FroalaApi/UploadFile'  })</script> -->
+</body>
+
+</html>
